@@ -98,3 +98,9 @@ git push
 echo "--- ✅ All Done! ---"
 echo "Your project 'popup--ai' is live on GitHub."
 echo "An automated APK build has already started."
+
+# prevent-env-push — do not commit any .env
+if git diff --cached --name-only | grep -q "\.env"; then
+    echo "❌ Detected a .env file staged for commit! Commit aborted."
+    exit 1
+fi
