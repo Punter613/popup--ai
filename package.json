@@ -1,0 +1,24 @@
+{
+  "name": "popup-20251016_1617261",
+  "version": "1.0.0",
+  "description": "ai popup",
+  "license": "ISC",
+  "author": "punter613",
+  "type": "commonjs",
+  "main": "~/popup-20251016_16172610",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:web": "npm run build --prefix frontend",
+    "copy": "npx cap copy",
+    "build": "npm run build:web && npm run copy"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "ai": "^5.0.76",
+    "android": "^0.0.8",
+    "popup": "^0.0.3"
+  }
+}

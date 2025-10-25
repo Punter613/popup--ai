@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/Ai popup/popup-20251016_1617261/README.md",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 2304,
+          "line": 72
+        },
+        "start": {
+          "column": 0,
+          "index": 1475,
+          "line": 34
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/Ai popup/popup-20251016_1617261/README.md"
+}

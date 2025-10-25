@@ -1,0 +1,34 @@
+test_01_root_endpoint (__main__.BackendAPITest.test_01_root_endpoint)
+Test the root endpoint ... ✅ Root endpoint test passed
+Response: {'message': "punter613's AI Assistant Backend - Ready to serve!"}
+ok
+test_02_api_structure (__main__.BackendAPITest.test_02_api_structure)
+Test the API structure by checking response codes for all endpoints ... GET /sessions status code: 500
+POST /sessions status code: 500
+POST /chat status code: 500
+POST /upload status code: 500
+✅ API structure test passed - all endpoints exist
+ok
+test_03_openai_integration_structure (__main__.BackendAPITest.test_03_openai_integration_structure)
+Test the OpenAI integration structure ... ✅ OpenAI integration structure test passed
+ok
+test_04_mongodb_integration_structure (__main__.BackendAPITest.test_04_mongodb_integration_structure)
+Test the MongoDB integration structure ... ✅ MongoDB integration structure test passed
+ok
+test_05_session_management_implementation (__main__.BackendAPITest.test_05_session_management_implementation)
+Test the session management implementation ... ✅ Session management implementation test passed
+ok
+test_06_chat_api_implementation (__main__.BackendAPITest.test_06_chat_api_implementation)
+Test the chat API implementation ... ✅ Chat API implementation test passed
+ok
+test_07_file_upload_implementation (__main__.BackendAPITest.test_07_file_upload_implementation)
+Test the file upload implementation ... ✅ File upload implementation test passed
+ok
+test_08_error_handling_implementation (__main__.BackendAPITest.test_08_error_handling_implementation)
+Test the error handling implementation ... ✅ Error handling implementation test passed
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 122.078s
+
+OK
