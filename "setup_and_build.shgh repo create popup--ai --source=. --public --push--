@@ -23,23 +23,14 @@ echo "--- Step 2: Logging in to GitHub... ---"
 gh auth login
 
 # --- Step 3: Initialize Git and Create Repository ---
-# --- Auto-detect existing GitHub repo ---
-REPO_NAME="popup--ai"
-GITHUB_USER=$(gh api user --jq '.login')
-EXISTS=$(gh repo list "$GITHUB_USER" --json name --jq ".[].name" | grep -x "$REPO_NAME" || true)
-
-if [ -n "$EXISTS" ]; then
-    echo "ℹ️ Repo '$REPO_NAME' already exists. Skipping creation..."
-    git remote set-url origin "https://github.com/$GITHUB_USER/$REPO_NAME.git"
-else
-    echo "🚀 Creating GitHub repository '$REPO_NAME'..."
-    gh repo create "$REPO_NAME" --public --confirm
-fi
-
-# Make sure we’re pushing the current branch
+#
+# ---Make sure we’re pushing the current branch
 git branch -M main
 git push -u origin main --force
-# --- Step 4: Create the GitHub Actions workflow ---
+	gh gh repo create popup--ai --source=. --public --push
+repo create popup--ai --source=. --public --push
+---
+# --- ---Step 4: Create the GitHub Actions workflow ---="
 echo "--- Step 4: Creating GitHub Actions workflow file... ---"
 mkdir -p .github/workflows
 
